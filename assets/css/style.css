@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../images/gravel.png');
+    background-attachment: fixed;
+    margin: 0 auto;
+    color: #777777;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -66px;
+}
+
+.footer, .push {
+    height: 66px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #cccccc;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.Nav-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30px;
+}
+.name {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    float: left;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 300px;
+    height: 90px;
+}
+
+
+.NavBar {
+    /* color: #777777; */
+    list-style-type: none;
+    background-color: transparent;
+    position: absolute;
+    right: -14px;
+    top: 35px;
+}
+
+li {
+    float: left;
+    border-left: 1px solid #cccccc;
+}
+
+li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+
+}
+
+li:first-child {
+    border-left: none;
+}
+
+li:last-child {
+    padding-left: 0px;
+}
+
+.content-container {
+    clear: both;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-bottom: 40px;
+    padding: 0 30px 30px 30px;
+}
+
+.content-header {
+    color: #4aaaa5;
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 30px;
+    height: 100px;
+    padding-top: 8px;
+
+}
+
+.headshot {
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+#content {
+    line-height: 28px;
+}
+
+
+.skills {
+    float: none;
+    border: none;
+    list-style-type: circle;
+    margin-left: 30px;
+
+}
+
+.footer {
+    clear: both;
+    background-color: #666666;
+    min-width: 100%;
+    height: 66px;
+    float: left;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 45px;
+    font-size: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-top: 4px;
+    padding: 7px;
+
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 16px;
+    width: 114px;
+    height:42px;
+}
+
+.column1, .column2 {
+    float: left;
+    position: relative;
+    margin-right: 30px;
+    max-width: 33%;
+
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#puppy1, #puppy2, #puppy3, #puppy4 {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+#puppy5 {
+    max-width: 100%;
+}
+
+
+button {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    width: 100%;
+    height:  25%;
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#RPS {
+    position: absolute;
+    bottom: 10%;
+    height: 30%;
+}
+
+/* 980px screen */
+
+@media screen and (max-width:980px) {
+    .content-container {
+        max-width: 590px;
+        width: fit-content;
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .Nav-container {
+        max-width: 960px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* .column2{
+        float: right;
+        margin-right: 0%;
+        max-width: 48%;
+    } */
+
+    .portfolio-content  {
+        width: auto;
+    }
+
+    .column1, .column2 {
+        max-width: 42%;
+    }
+    .column2 {
+        margin-right: 0%;
+    }
+
+    
+
+    
+
+    .contact-form {
+      width: 650px;
+  }
+
+  form {
+      width: 590px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        float: none;
+        max-width: 710px;
+        margin-right: 3%;
+        margin-left: 3%;
+        
+    }
+
+    .Nav-container {
+        max-width: 94%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .column1, .column2 {
+        max-width: 350px;
+    }
+
+    .puppy {
+        width: 300px;
+        height: auto;
+
+    }
+
+
+    
+
+}
+
