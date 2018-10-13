@@ -291,10 +291,11 @@ footer {
 
     #masthead {
         padding-left: 0px;
+        position: static;
     }
 
     #content-container {
-        padding-top: 180px;
+        padding-top: 0px;
     }
     .work:nth-child(odd) {
         float: left;
@@ -309,6 +310,8 @@ footer {
         font-size: 30px;
         line-height: 45px;
     }
+
+
 
 }
 
